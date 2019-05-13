@@ -1,7 +1,16 @@
-console.log('hi');
+//append a ul
+//and append a li with 'spot', 'rover', 'bingo', and 'joe'
 
-function add(a, b) {
-  return a + b;
-}
+import styles from './index.css';
 
-console.log(add(4, 5));
+const root = document.getElementById('root');
+const ul = document.createElement('ul');
+ul.className = styles.dogs;
+root.appendChild(ul);
+
+['spot', 'rover', 'bingo', 'joe']
+  .forEach(name => {
+    const li = document.createElement('li');
+    li.textContent = name;
+    ul.appendChild(li);
+  });
