@@ -1,24 +1,33 @@
 {
   "name": "layout-components",
   "version": "1.0.0",
-  "description": "test",
+  "description": "",
   "main": "index.js",
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>src/setupTests.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --verbose",
+    "test:watch": "npm run test -- --watch",
     "build": "webpack -p --devtool source-map",
     "start": "webpack-dev-server --hot --mode development --devtool eval-source-map"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CheriPortman/layout-components.git"
+    "url": "git+https://github.com/mehtaphysical/layout-components.git"
   },
   "keywords": [],
-  "author": "Cheri Portman",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CheriPortman/layout-components/issues"
+    "url": "https://github.com/mehtaphysical/layout-components/issues"
   },
-  "homepage": "https://github.com/CheriPortman/layout-components#readme",
+  "homepage": "https://github.com/mehtaphysical/layout-components#readme",
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
