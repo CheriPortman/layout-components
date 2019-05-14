@@ -10,6 +10,7 @@ const hexFromRGB = (rgb) => {
 
 export default function Color() {
   const name = 'Pearl Violet';
+  
   const rgb = {
     red: 134,
     green: 115,
