@@ -1,7 +1,8 @@
-console.log('hi');
+import React from 'react';
+import { render } from 'react-dom';
+import App from './components/App';
 
-function add(a, b) {
-  return a + b;
-}
-
-console.log(add(4, 5));
+render(
+  <App />,
+  document.getElementById('root')
+);
